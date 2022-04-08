@@ -1,0 +1,48 @@
+/* body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding 0;
+} */
+
+.wrapper {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.item {
+    width: 100px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.item_input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.trigger {
+    width: 300px;
+    height: 300px;
+    display: block;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.content {
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    border: 1px solid black;
+    border-top: none;
+    display: none;
+}
+
+.item_input:checked ~ .trigger {
+    background-color: red;
+}
+
+.item_input:checked ~ .content {
+    display: block;
+    background-color: red;
+}
